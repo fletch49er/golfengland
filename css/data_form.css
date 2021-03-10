@@ -1,0 +1,79 @@
+* {
+	color: #d40000; /* red */
+}
+#wrapper {
+	font-family: "Liberation Sans", sans-serif;
+	font-size: 14pt;
+	width:960px;
+	margin: 50px auto;
+	padding: 50px;
+	border: 1px solid #d40000; /* red */
+}
+p {
+	line-height: 115%;
+}
+div {
+	margin-bottom: 40px;
+}
+#header {
+	display: block;
+	margin-bottom: 0.5cm;
+	font-weight: normal;
+	line-height: 100%;
+}
+#form {
+
+}
+input, select {
+	height: 25pt;
+}
+input[type=checkbox] {
+	width: 20pt;
+	box-sizing: border-box;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ccc;
+}
+select {
+	width: 200px;
+}
+.note {
+	font-size: 10pt;
+}
+.detail-label1, .detail-select,
+.detail-label2, .detail-label3, .detail-label4 {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.detail-label1 {
+	width: 100px;
+}
+#course_type, #par,
+#wkday_rnd, #wkday_day, #wkend_rnd, #wkend_day {
+	margin-right: 40px;
+}
+.detail-label3 {
+	width: 220px;
+}
+.detail-label4 {
+	width: 200px;
+}
+.red {
+	color: #f00;
+}
+#ftr-img {
+	float: right;
+	margin-left: 20px;
+}
+#ftr-txt {
+	font-family: "Impact", sans-serif;
+	font-size: 26pt;
+	text-align: right;
+}

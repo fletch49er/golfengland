@@ -1,0 +1,302 @@
+/* general styling *********************/
+/* <div> overflow fix ******************/
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#gs-wrapper {
+	margin: 32px;
+}
+
+h1, h2, h3, h4, .gs-colour  {
+	color: #d40000; /* red */
+}
+
+#gs-content a:link, #gs-content a:visited,
+#gs-contactDetails a:link, #gs-contactDetails a:visited {
+	color: #d40000; /* red */
+}
+#gs-content a:link, #gs-content a:visited {
+	text-decoration: none;
+}
+#gs-contactDetails a:link, #gs-contactDetails a:visited {
+	text-decoration: underline;
+}
+#gs-content a:hover, #gs-contactDetails a:hover {
+	color: #000; /* black */;
+}
+
+/* course list styling *****************/
+#gs-search-form-container {
+	display: inline-block;
+	width: 100%;
+}
+#gs-search-form {
+	width: 75%;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-left: auto;
+}
+.gs-query-box {
+	display: inline-block;
+	width: 37%;
+}
+.gs-submit-box {
+	display: inline-block;
+	width: 24%;
+}
+#gs-search-button {
+	width: 100%;
+	padding: 15px 30px;
+	color: #fff;
+	border: 1px solid #d40000; /* red */
+	background-color: #d40000; /* red */
+  cursor: pointer;
+}
+
+table#gs-allCourse {
+	width: 100%;
+}
+table, th, td {
+	border: none!important;
+}
+table#gs-allCourse tr:nth-child(odd) {
+	background-color: #eee; /* lightgrey */
+}
+table#gs-allCourse tr:nth-child(even) {
+	background-color: #fff; /* white */
+}
+table#gs-allCourse th {
+	color: white;
+	background-color: #d40000; /* red */
+}
+th {
+	height: 50px;
+	font-size: 14pt;
+}
+td {
+	font-size: 12pt;
+}
+td.center {
+	text-align: center;
+}
+td.gs-img {
+	width: 135px;
+}
+
+.gs-imgLogo {
+	height: 50px;
+	border: none!important;
+}
+
+/* course template styling *************/
+#gs-header {
+	position: relative;
+	background-color: #ccc; /* grey */
+	background-size: cover;
+	background-position: left center;
+	background-repeat: none;
+	height: 240px;
+	margin-bottom: 20px;
+}
+#gs-header, #gs-header h1, #gs-footer {
+	color: white;
+}
+#gs-header h1 {
+	margin: 120px 0px 0px 32px;
+}
+#gs-logo {
+	position: absolute;
+	top: 10px;
+	left: 32px;
+	height: 100px;
+}
+#gs-footer {
+	background-color: #ccc; /* grey */
+	background-size: cover;
+	background-position: left center;
+	background-repeat: none;
+	padding: 20px 32px;
+	font-size: 14px;
+}
+#gs-footer a:link, #gs-footer a:visited {
+	text-decoration: underline;
+	color: #fff; /* white */
+}
+#gs-footer a:hover {
+	color: palegoldenrod;
+}
+#gs-contactDetails {
+	width: 100%;
+}
+#gs-contactItems, #gs-socialMedia {
+	display: inline-block;
+	margin-right: 32px;
+}
+.gs-contact {
+	display: inline-block;
+	width: 74px;
+}
+.gs-social {
+	width: 50px;
+}
+#gs-address {
+	margin-top: 10px;
+	text-align: right;
+}
+
+#gs-content > div {
+	margin-bottom: 20px;
+}
+#gs-weekday, #gs-weekend {
+	display: inline-block;
+	margin: 0px 32px 10px 0px;
+}
+.gs-ticket {
+	display: inline-block;
+	width: 120px;
+}
+table#gs-greenfees2 {
+	width: 40%;
+	font-size: 14pt;
+	border: none;
+}
+table#gs-greenfees2 th {
+	font-weight: bold;
+	text-transform: capitalize;
+	border: none;
+}
+table#gs-greenfees2 td {
+	border: none;
+}
+table#gs-greenfees2 tr:nth-child(odd) {
+	background-color: #fff; /* white */
+}
+table#gs-greenfees2 tr:nth-child(even) {
+	background-color: #eee; /* lightgrey */
+}
+table#gs-greenfees2 th:nth-child(3), table#gs-greenfees2 th:nth-child(4),
+table#gs-greenfees2 th:nth-child(5),
+table#gs-greenfees2 td:nth-child(3), table#gs-greenfees2 td:nth-child(4),
+table#gs-greenfees2 td:nth-child(5) {
+	text-align: right;
+}
+table#gs-greenfees2 td:nth-child(3), table#gs-greenfees2 td:nth-child(4),
+table#gs-greenfees2 td:nth-child(5) {
+	font-weight: bold;
+	color:  #d40000; /* red */
+}
+#gs-key {
+	background-color: #b2cadf; /* lightblue */
+	padding: 20px;
+}
+#gs-map {
+	border: 1px solid #d40000; /* red */
+	margin:0;
+	padding: 0;
+  height: 400px;
+	width: 100%;
+}
+#gs-advertBox {
+	max-width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.gs-advert {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.gs-featBox {
+	display: inline-block;
+	max-width: 320px;
+}
+.gs-featItem {
+	display: inline-block;
+	width: 50%;
+}
+.gs-featIcon {
+	display: inline-block;
+	text-align: center;
+}
+.gs-vid {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 840px) {
+
+	#gs-wrapper {
+		margin: 10px;
+	}
+	#gs-search-form {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	.gs-submit-box {
+		width: 24%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	h2 {
+		font-size: 20pt;
+	}
+	.gs-query-box, .gs-submit-box {
+		display: block;
+		width: 100%;
+	}
+	#gs-search-button {
+		margin-top: 5px;
+	}
+	th {
+		height: 50px;
+		font-size: 8pt;
+	}
+	td {
+		font-size: 8pt;
+	}
+	th.gs-switch, td.gs-switch {
+		display: none;
+	}
+
+  #gs-wrapper, #gs-header h1 {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	#gs-footer {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	#gs-contactItems {
+		width: 100%;
+	}
+	.gs-social {
+		display: inline-block;
+		margin-top: 20px;
+	}
+	#gs-logo {
+		left: 8px;
+	}
+	#gs-header h1 {
+		font-size: 28px;
+	}
+	table#gs-greenfees2 {
+		width: 100%;
+	}
+	.gs-advert {
+		width: 100%;
+	}
+	.gs-vid {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
