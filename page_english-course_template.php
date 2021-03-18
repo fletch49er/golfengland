@@ -182,26 +182,35 @@ foreach ($courses as $course) : ?>
 		</script>
 		<!-- end Google Maps API -->
 
-<?php if($course->img_ad1 != null) : ?>
+<?php if(($course->img_ad1 != null) xor ($course->special_offers != null) xor
+					($course->img_ad1 != null) && ($course->special_offers != null)) : ?>
+		<h3>Special Offers:</h3>
+<?php
+endif;
+
+if($course->img_ad1 != null) : ?>
 		<div id="gs-advertBox">
-			<a href="<?php  echo $course->website; ?>">
+			<a href="<?php echo $course->website; ?>">
 				<img class="gs-advert" src="<?php echo $img_uri.$course->img_ad1; ?>" alt="current advert No.1" />
 			</a>
 		</div><!-- end .gs-advertBox -->
 <?php
-	endif;
+endif;
 
-	if($course->special_offers != null) :
-?>
-		<h3>Special Offers:</h3>
+if(($course->img_ad1 != null) && ($course->special_offers != null)) : ?>
+		<hr style="margin: 20px auto; width: 40%; color: #eee;" />
+<?php
+endif;
+
+if($course->special_offers != null) : ?>
 		<div id="gs-specialOffers">
 <?php echo nl2br(html_entity_decode($course->special_offers)); ?>
-</div><!-- end #gs-specialOffers-->
+		</div><!-- end #gs-specialOffers-->
 <?php
-	endif;
+endif;
 
-	if($course->feature_switch == 1) :
-		foreach ($features as $feature) : ?>
+if($course->feature_switch == 1) :
+	foreach ($features as $feature) : ?>
 		<h3>Golf Course Features and Facilities:</h3>
 		<div id="gs-features">
 			<div class="gs-featBox">
@@ -250,28 +259,28 @@ foreach ($courses as $course) : ?>
 </div><!-- end #gs-featNotes -->
 <?php endif; ?>
 <?php
-		endforeach;
-	endif;
+	endforeach;
+endif;
 
-	if ($course->video1 != null) :
+if ($course->video1 != null) :
 ?>
 		<h3>Gallery:</h3>
 		<div id="gs-gallery">
 			<div id="gs-video">
 <?php
-		foreach ($videos as $video) :
-			for ($x=1; $x <= 3; $x++) :
-				$vid = 'video'.$x;
-				// set video image width and height
-				$v_width = 425;
-				$v_height = 239;
-				if($video->$vid != null) :
+	foreach ($videos as $video) :
+		for ($x=1; $x <= 3; $x++) :
+			$vid = 'video'.$x;
+			// set video image width and height
+			$v_width = 425;
+			$v_height = 239;
+			if($video->$vid != null) :
 ?>
 				<iframe class="gs-vid" width="<?php echo $v_width; ?>" height="<?php echo $v_height; ?>" src="<?php echo $video_uri.$video->$vid; ?>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <?php
-				endif;
-			endfor;
-		endforeach;
+			endif;
+		endfor;
+	endforeach;
 ?>
 			</div><!-- end #gs-video -->
 		</div><!-- end #gs-gallery -->
