@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: Product Review Page
+ * Template Name: Golf News Page
  */
 
-get_header();
+get_header('gt');
 
 get_template_part( 'templates/top-title' ); ?>
 
@@ -24,7 +24,7 @@ get_template_part( 'templates/top-title' ); ?>
     </div>
 
     <aside class="mh-layout__sidebar-right">
-        <?php get_template_part( 'templates/pr-sidebar' ); ?>
+        <?php get_template_part( 'templates/gn-sidebar' ); ?>
     </aside>
 
 </div>
