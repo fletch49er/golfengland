@@ -1,3 +1,13 @@
+/* general styling *********************/
+/* <div> overflow fix ******************/
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 * {
 	color: #d40000; /* red */
 }
@@ -12,25 +22,106 @@
 p {
 	line-height: 115%;
 }
-div {
-	margin-bottom: 40px;
-}
 #header {
 	display: block;
 	margin-bottom: 0.5cm;
 	font-weight: normal;
 	line-height: 100%;
 }
-#form {
+#hdr_img, #ftr_img {
+	height: 75px;
+}
 
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
-input, select {
-	height: 25pt;
-}
+
 input[type=checkbox] {
-	width: 20pt;
-	box-sizing: border-box;
+  width: 20pt;
+  padding: 5px;
+  vertical-align: middle;
+  border: 1px solid red;
+  box-sizing: content-box;
 }
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #d40000; /* red */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+.col-5 {
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+}
+.col-10 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+.col-15 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+.col-18 {
+  float: left;
+  width 18%
+  margin-top: 6px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-30 {
+  float: left;
+  width: 33%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+.col-85 {
+  float: left;
+  width: 85%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right-10 {
+  	margin-right: 10px;
+}
+.right-20 {
+  	margin-right: 20px;
+}
+.detail-label4 {
+	width: 70%;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ccc;
   opacity: 1; /* Firefox */
@@ -41,39 +132,32 @@ input[type=checkbox] {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #ccc;
 }
-select {
-	width: 200px;
-}
+
 .note {
 	font-size: 10pt;
 }
-.detail-label1, .detail-select,
-.detail-label2, .detail-label3, .detail-label4 {
-	display: inline-block;
-	margin-bottom: 20px;
+#contact-details {
+  margin-bottom: 80px;
 }
-.detail-label1 {
-	width: 100px;
+
+/* Style features section */
+#main-feat {
+ display: block;
 }
-#course_type, #par,
-#wkday_rnd, #wkday_day, #wkend_rnd, #wkend_day {
-	margin-right: 40px;
-}
-.detail-label3 {
-	width: 220px;
-}
-.detail-label4 {
-	width: 200px;
+.features {
+  display: inline-block;
+  width: 33%;
+  float: left;
 }
 .red {
 	color: #f00;
 }
+.green {
+  color: green;
+}
+#footer {
+  clear: both;
+}
 #ftr-img {
 	float: right;
-	margin-left: 20px;
-}
-#ftr-txt {
-	font-family: "Impact", sans-serif;
-	font-size: 26pt;
-	text-align: right;
 }

@@ -40,6 +40,7 @@ define('SEPERATOR', '|');
 // url constants
 define ('SITE_URL', 'https://www.golfengland.biz/course/');
 define ('IMG_URL', 'https://www.golfengland.biz/wp-content/uploads/');
+define ('IMG_URL2', 'https://www.golfengland.biz/wp-content/themes/myhome/images/');
 
 // social media urls
 define ('FACEBOOK', 'https://www.facebook.com/');
@@ -55,22 +56,5 @@ $ftr_navbar_data = [
 	'privacy policy' => 'privacy-policy',
 	'disclaimer' => 'disclaimer',
 	'copyright' => 'copyright'
-];
-
-
-// array of data form placeholders
-$placeholder = [
-	'name' => 'club or course name',
-	'address' => 'your address including postcode',
-	'select' => 'select an option',
-	'par' => 'par',
-	'length' => 'yards',
-	'phone' => 'telephone number',
-	'website' => 'https://www.yourdomainname.com',
-	'email' => 'your@emailaddrss.com',
-	'facebook' => 'yourusername',
-	'twitter' => 'yourusername',
-	'instagram' => 'yourusername',
-	'youtube' => 'yourchannelname'
 ];
 ?>
