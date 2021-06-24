@@ -36,7 +36,7 @@ else :
 ?>
 <div id="wrapper" class="clearfix">
 	<div id="header">
-		<img id="hdr-img" src="<?php echo IMG_URL2; ?>logos/geb-logo_red.png" alt="geb-logo.png" />
+		<img id="hdr-img" src="<?php echo IMG_URL2; ?>logos/geb-logo_red.png" alt="geb-logo_red.png" />
 	</div><!-- end #header -->
 
 	<h1>COURSE PROFILE FORM</h1>
@@ -68,7 +68,7 @@ else :
         case ($key == 'facebook' || $key == 'twitter' || $key == 'instagram' || $key == 'youtube'):
           $pattern = 'socialPattern';
           break;
-        case ($key == 'description' || $key == 'directions' || $key == 'special_offers'):
+        case ($key == 'description' || $key == 'directions' || $key == 'special_offers' || $key == 'feature_note'):
           $pattern = 'textPattern';
           break;
         case ($key == 'wkday_rnd' || $key == 'wkday_day' || $key == 'wkend_rnd' || $key == 'wkend_day'):
@@ -115,7 +115,7 @@ else :
           case 'email':
             echo '(e.g. "yourname@emailaddress.com" or "yourname@emailaddress.co.uk")</p>'.PHP_EOL;
             break;
-          case ($key == 'description' || $key == 'directions' || $key == 'special_offers'):
+          case ($key == 'description' || $key == 'directions' || $key == 'special_offers' || $key == 'feature_note'):
             echo '(e.g. plain text - no HTML etc.)</p>'.PHP_EOL;
             break;
           case ($key == 'wkday_rnd' || $key == 'wkday_day' || $key == 'wkend_rnd' || $key == 'wkend_day'):

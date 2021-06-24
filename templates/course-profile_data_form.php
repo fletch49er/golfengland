@@ -273,7 +273,12 @@ foreach($types as $id => $type) {
           <label class="detail-label4" for="society_golf">Society Golf:</label>
           <input type="checkbox" id="society_golf" name="society_golf" value="1" />
         </div>
-      </div>
+
+				<h3>Additional Notes on Features:</h3>
+	      <p class="note">NOTE: Please leave blank if not applicable.</p>
+	      <label class="detail-label1" for="feature_note"></label>
+	      <textarea id="feature_note" name="feature_note" cols="127" placeholder="enter any addittional course facilities/ features"></textarea>
+      </div><!-- end #main-feat -->
     </div><!-- end #contact-details -->
 
     <div id="submit-button">
