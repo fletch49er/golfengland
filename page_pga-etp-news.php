@@ -5,7 +5,7 @@
 
 get_header();
 
-get_template_part( 'templates/top-title-pga' ); ?>
+get_template_part( 'templates/pga-top-title' ); ?>
 
 <div class="mh-layout mh-top-title-offset">
 
@@ -24,7 +24,7 @@ get_template_part( 'templates/top-title-pga' ); ?>
     </div>
 
     <aside class="mh-layout__sidebar-right">
-        <?php get_template_part( 'templates/sidebar-v2' ); ?>
+        <?php get_template_part( 'templates/pga-sidebar' ); ?>
     </aside>
 
 </div>
