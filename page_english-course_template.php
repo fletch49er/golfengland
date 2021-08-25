@@ -49,6 +49,45 @@ foreach ($courses as $course) : ?>
 	background-image: url('<?php echo $img_uri.'2020/05/golf_course1.jpg'; ?>');
 <?php endif; ?>
 }
+#book-now-button {
+  width: 50%;
+  margin: auto;
+}
+#book-now {
+  background-color: lightblue;
+  border: 7px lightgrey;
+  border-style: ridge;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 48px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+#book-now:hover {
+  background-color: white;
+  color: lightblue;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 480px) {
+	#book-now-button {
+		width: 100%;
+	}
+}
 #gs-footer {
 <?php if($course->img_ftr != null) : ?>
 	background-image: url('<?php echo $img_uri.$course->img_ftr; ?>');
@@ -208,7 +247,16 @@ if($course->special_offers != null) : ?>
 		</div><!-- end #gs-specialOffers-->
 <?php
 endif;
+?>
 
+		<!-- insert book now button -->
+		<div id="book-now-button">
+			<a href="<?php echo $course->website; ?>">
+				<img src="<?php echo $img_uri; ?>/2021/07/booknow.gif" alt="book now graphic" />
+			</a>
+		</div><!-- end book-now-button -->
+
+<?php
 if($course->feature_switch == 1) :
 	foreach ($features as $feature) : ?>
 		<h3>Golf Course Features and Facilities:</h3>
